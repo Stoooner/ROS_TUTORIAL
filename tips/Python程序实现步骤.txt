@@ -1,0 +1,29 @@
+1. 创建工作空间并初始化
+    mkdir -p 自定义空间名称/src
+    cd 自定义空间名称
+    catkin_make
+2. 进入src创建ros包并添加依赖
+    cd 自定义空间名称/src
+    catkin_create_pkg 自定义ROS包名 roscpp rospy std_msgs
+3. 进入ros包添加scripts目录
+    cd 自定义空间名称/src/自定义ROS包名/
+    mkdir scripts
+4. 编辑python文件
+    #! /usr/bin/env python
+    import rospy
+    if __name__ == "__main__":
+        rospy.init_node("Hello")
+        rospy.loginfo("Hello World!!!!")
+5. 为python文件添加可执行权限并编辑ros包下的Cmakelist.txt文件
+    5.1 hmod +x 自定义文件名.py
+    5.2 catkin_install_python(PROGRAMS scripts/自定义文件名.py
+            DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+        )
+6. 进入工作空间目录并编译
+    cd 自定义空间名称
+    catkin_make
+7. 执行：
+    7.1 启动命令行1: roscore
+    7.2 启动命令行2: cd 自定义工作空间
+                   source ./devel/setup.bash
+                   rosrun 包名 自定义文件名.py

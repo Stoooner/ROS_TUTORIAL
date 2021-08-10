@@ -1,0 +1,8 @@
+prefix=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo2/install
+
+Name: hello_world
+Description: Description of hello_world
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

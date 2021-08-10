@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/dashing/include/**",
+        "/usr/include/**",
+        "/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/devel/include/**"
+      ],
+      "name": "ROS",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

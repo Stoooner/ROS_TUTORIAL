@@ -1,0 +1,8 @@
+<launch>
+    <!--添加被执行的节点-->
+    <!--乌龟GUI：需要注意的是，这里的type要与cmakelists里的节点名一致，另外这里的name就是编写的cpp文件中初始化节点的节点名称-->
+    <!--其实type就是相当于gcc a.c -o a.out中的a.out，就是可执行程序-->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_key"/>
+    <!-- <node pkg="hello_world" type="hello_vscode" name="hello" output="screen"/> -->
+</launch>

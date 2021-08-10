@@ -1,0 +1,2 @@
+helloworld
+-DCATKIN_DEVEL_PREFIX=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/devel -DCMAKE_INSTALL_PREFIX=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/install -G Unix Makefiles
