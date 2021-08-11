@@ -1,0 +1,8 @@
+prefix=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/install
+
+Name: plumbing_params_server
+Description: Description of plumbing_params_server
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -6,8 +6,8 @@
         2. 初始化ROS节点；
         3. 创建节点句柄；
         4. 创建发布者对象；
-        5. 编写发布逻辑并发布数据
-        6. 打印当前发布者发布的数据: rostopic echo xxxxxxtopic
+        5. 编写发布逻辑并发布数据;
+        6. 打印当前发布者发布的数据: rostopic echo xxxxxxtopic;
 */
 int main(int argc, char *argv[]){
     setlocale(LC_ALL, "");
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
     // 3. 创建节点句柄；
     ros::NodeHandle nh;
     // 4. 创建发布者对象；
-    ros::Publisher pub = nh.advertise<plumbing_pub_sub::Person>("Teacher_Info", 10);
+    ros::Publisher pub = nh.advertise<plumbing_pub_sub::Person>("Teacher_Info", 10); 
     // 5. 编写发布逻辑并发布数据
     // 5.1 创建被发布的数据
     plumbing_pub_sub::Person Teacher;

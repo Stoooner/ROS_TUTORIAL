@@ -1,0 +1,8 @@
+prefix=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/devel
+
+Name: plumbing_server_client
+Description: Description of plumbing_server_client
+Version: 0.0.0
+Cflags: -I/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime

@@ -131,7 +131,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/gtest/cmake_install.cmake")
+  include("/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/plumbing_params_server/cmake_install.cmake")
   include("/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/plumbing_pub_sub/cmake_install.cmake")
+  include("/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/plumbing_server_client/cmake_install.cmake")
+  include("/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/plumbing_turtlesim_move_control/cmake_install.cmake")
 
 endif()
 
