@@ -68,6 +68,18 @@ install/fast: preinstall/fast
 	/opt/cmake-3.12.2/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/cmake-3.12.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/cmake-3.12.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -90,18 +102,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/opt/cmake-3.12.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/opt/cmake-3.12.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # Special rule for the target test
 test:
@@ -243,6 +243,36 @@ plumbing_pub_sub_generate_messages_lisp/fast:
 .PHONY : plumbing_pub_sub_generate_messages_lisp/fast
 
 # Convenience name for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
+
+# Convenience name for target.
+plumbing_pub_sub_generate_messages: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
+
+.PHONY : plumbing_pub_sub_generate_messages
+
+# fast build rule for target.
+plumbing_pub_sub_generate_messages/fast:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build
+.PHONY : plumbing_pub_sub_generate_messages/fast
+
+# Convenience name for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+plumbing_pub_sub_generate_messages_cpp: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
+
+.PHONY : plumbing_pub_sub_generate_messages_cpp
+
+# fast build rule for target.
+plumbing_pub_sub_generate_messages_cpp/fast:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build
+.PHONY : plumbing_pub_sub_generate_messages_cpp/fast
+
+# Convenience name for target.
 plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/rule:
 	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/rule
 .PHONY : plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/rule
@@ -318,6 +348,21 @@ demo04_sub_person/fast:
 .PHONY : demo04_sub_person/fast
 
 # Convenience name for target.
+plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/rule:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/rule
+.PHONY : plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/rule
+
+# Convenience name for target.
+demo05_time_api: plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/rule
+
+.PHONY : demo05_time_api
+
+# fast build rule for target.
+demo05_time_api/fast:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build.make plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build
+.PHONY : demo05_time_api/fast
+
+# Convenience name for target.
 plumbing_pub_sub/CMakeFiles/demo02_sub.dir/rule:
 	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/demo02_sub.dir/rule
 .PHONY : plumbing_pub_sub/CMakeFiles/demo02_sub.dir/rule
@@ -346,36 +391,6 @@ demo03_pub_person: plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/rule
 demo03_pub_person/fast:
 	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/build.make plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/build
 .PHONY : demo03_pub_person/fast
-
-# Convenience name for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule:
-	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
-
-# Convenience name for target.
-plumbing_pub_sub_generate_messages: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
-
-.PHONY : plumbing_pub_sub_generate_messages
-
-# fast build rule for target.
-plumbing_pub_sub_generate_messages/fast:
-	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build
-.PHONY : plumbing_pub_sub_generate_messages/fast
-
-# Convenience name for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule:
-	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-plumbing_pub_sub_generate_messages_cpp: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
-
-.PHONY : plumbing_pub_sub_generate_messages_cpp
-
-# fast build rule for target.
-plumbing_pub_sub_generate_messages_cpp/fast:
-	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build
-.PHONY : plumbing_pub_sub_generate_messages_cpp/fast
 
 # Convenience name for target.
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_genlisp.dir/rule:
@@ -515,6 +530,33 @@ src/demo04_sub_person.cpp.s:
 	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/build.make plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/src/demo04_sub_person.cpp.s
 .PHONY : src/demo04_sub_person.cpp.s
 
+src/demo05_time_api.o: src/demo05_time_api.cpp.o
+
+.PHONY : src/demo05_time_api.o
+
+# target to build an object file
+src/demo05_time_api.cpp.o:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build.make plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/src/demo05_time_api.cpp.o
+.PHONY : src/demo05_time_api.cpp.o
+
+src/demo05_time_api.i: src/demo05_time_api.cpp.i
+
+.PHONY : src/demo05_time_api.i
+
+# target to preprocess a source file
+src/demo05_time_api.cpp.i:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build.make plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/src/demo05_time_api.cpp.i
+.PHONY : src/demo05_time_api.cpp.i
+
+src/demo05_time_api.s: src/demo05_time_api.cpp.s
+
+.PHONY : src/demo05_time_api.s
+
+# target to generate assembly for a file
+src/demo05_time_api.cpp.s:
+	cd /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build && $(MAKE) -f plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build.make plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/src/demo05_time_api.cpp.s
+.PHONY : src/demo05_time_api.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -527,18 +569,19 @@ help:
 	@echo "... install"
 	@echo "... plumbing_pub_sub_gennodejs"
 	@echo "... plumbing_pub_sub_generate_messages_lisp"
+	@echo "... install/local"
+	@echo "... plumbing_pub_sub_generate_messages"
+	@echo "... plumbing_pub_sub_generate_messages_cpp"
 	@echo "... _plumbing_pub_sub_generate_messages_check_deps_Person"
 	@echo "... plumbing_pub_sub_genpy"
 	@echo "... install/strip"
 	@echo "... plumbing_pub_sub_gencpp"
 	@echo "... demo01_pub"
 	@echo "... demo04_sub_person"
+	@echo "... demo05_time_api"
 	@echo "... demo02_sub"
 	@echo "... edit_cache"
 	@echo "... demo03_pub_person"
-	@echo "... plumbing_pub_sub_generate_messages"
-	@echo "... plumbing_pub_sub_generate_messages_cpp"
-	@echo "... install/local"
 	@echo "... plumbing_pub_sub_genlisp"
 	@echo "... plumbing_pub_sub_generate_messages_py"
 	@echo "... test"
@@ -556,6 +599,9 @@ help:
 	@echo "... src/demo04_sub_person.o"
 	@echo "... src/demo04_sub_person.i"
 	@echo "... src/demo04_sub_person.s"
+	@echo "... src/demo05_time_api.o"
+	@echo "... src/demo05_time_api.i"
+	@echo "... src/demo05_time_api.s"
 .PHONY : help
 
 

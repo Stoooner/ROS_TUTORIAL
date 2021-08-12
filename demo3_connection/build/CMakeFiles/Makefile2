@@ -269,7 +269,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=22,23,24,25 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=24,25,26,27 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -301,7 +301,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=19,20,21 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=21,22,23 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -352,7 +352,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=26,27 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=28,29 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -384,7 +384,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=28,29 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=30,31 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1041,11 +1041,12 @@ clean: plumbing_params_server/CMakeFiles/demo01_params_set.dir/clean
 # Directory level rules for directory plumbing_pub_sub
 
 # Convenience name for "all" pass in the directory.
+plumbing_pub_sub/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
 plumbing_pub_sub/all: plumbing_pub_sub/CMakeFiles/demo01_pub.dir/all
 plumbing_pub_sub/all: plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/all
+plumbing_pub_sub/all: plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/all
 plumbing_pub_sub/all: plumbing_pub_sub/CMakeFiles/demo02_sub.dir/all
 plumbing_pub_sub/all: plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/all
-plumbing_pub_sub/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
 
 .PHONY : plumbing_pub_sub/all
 
@@ -1055,15 +1056,16 @@ plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_geneus.dir/
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_gennodejs.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/clean
+plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
+plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_genpy.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_gencpp.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/demo01_pub.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/clean
+plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/demo02_sub.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/clean
-plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
-plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_genlisp.dir/clean
 plumbing_pub_sub/clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/clean
 
@@ -1082,7 +1084,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all: p
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=34 "Built target plumbing_pub_sub_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=36 "Built target plumbing_pub_sub_generate_messages_nodejs"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1147,7 +1149,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all: plum
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=31,32 "Built target plumbing_pub_sub_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=33,34 "Built target plumbing_pub_sub_generate_messages_eus"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1212,7 +1214,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all: plu
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=33 "Built target plumbing_pub_sub_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=35 "Built target plumbing_pub_sub_generate_messages_lisp"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1234,6 +1236,80 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir
+
+# All Build rule for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/depend
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num= "Built target plumbing_pub_sub_generate_messages"
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
+
+# Include target in all.
+all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 0
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
+
+# Convenience name for target.
+plumbing_pub_sub_generate_messages: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
+
+.PHONY : plumbing_pub_sub_generate_messages
+
+# clean rule for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean:
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
+
+# clean rule for target.
+clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir
+
+# All Build rule for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all: plumbing_params_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/depend
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=32 "Built target plumbing_pub_sub_generate_messages_cpp"
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 0
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+plumbing_pub_sub_generate_messages_cpp: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
+
+.PHONY : plumbing_pub_sub_generate_messages_cpp
+
+# clean rule for target.
+plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean:
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
+.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
@@ -1408,6 +1484,43 @@ clean: plumbing_pub_sub/CMakeFiles/demo04_sub_person.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target plumbing_pub_sub/CMakeFiles/demo05_time_api.dir
+
+# All Build rule for target.
+plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build.make plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/depend
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build.make plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=19,20 "Built target demo05_time_api"
+.PHONY : plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/all
+
+# Include target in all.
+all: plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 0
+.PHONY : plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/rule
+
+# Convenience name for target.
+demo05_time_api: plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/rule
+
+.PHONY : demo05_time_api
+
+# clean rule for target.
+plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/clean:
+	$(MAKE) -f plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/build.make plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/clean
+.PHONY : plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/clean
+
+# clean rule for target.
+clean: plumbing_pub_sub/CMakeFiles/demo05_time_api.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target plumbing_pub_sub/CMakeFiles/demo02_sub.dir
 
 # All Build rule for target.
@@ -1482,80 +1595,6 @@ clean: plumbing_pub_sub/CMakeFiles/demo03_pub_person.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir
-
-# All Build rule for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_nodejs.dir/all
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_eus.dir/all
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_lisp.dir/all
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all
-	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/depend
-	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num= "Built target plumbing_pub_sub_generate_messages"
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
-
-# Include target in all.
-all: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 0
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
-
-# Convenience name for target.
-plumbing_pub_sub_generate_messages: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/rule
-
-.PHONY : plumbing_pub_sub_generate_messages
-
-# clean rule for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean:
-	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
-
-# clean rule for target.
-clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir
-
-# All Build rule for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all: plumbing_params_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
-	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/depend
-	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=30 "Built target plumbing_pub_sub_generate_messages_cpp"
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles 0
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-plumbing_pub_sub_generate_messages_cpp: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/rule
-
-.PHONY : plumbing_pub_sub_generate_messages_cpp
-
-# clean rule for target.
-plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean:
-	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
-.PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_genlisp.dir
 
 # All Build rule for target.
@@ -1595,7 +1634,7 @@ plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all: plumb
 plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all: plumbing_pub_sub/CMakeFiles/_plumbing_pub_sub_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/depend
 	$(MAKE) -f plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/build.make plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=35,36 "Built target plumbing_pub_sub_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=37,38 "Built target plumbing_pub_sub_generate_messages_py"
 .PHONY : plumbing_pub_sub/CMakeFiles/plumbing_pub_sub_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1767,7 +1806,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.di
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=42,43 "Built target plumbing_server_client_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=44,45 "Built target plumbing_server_client_generate_messages_py"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1832,7 +1871,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodej
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=41 "Built target plumbing_server_client_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=43 "Built target plumbing_server_client_generate_messages_nodejs"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1865,7 +1904,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.d
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=37 "Built target plumbing_server_client_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=39 "Built target plumbing_server_client_generate_messages_cpp"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1930,7 +1969,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=40 "Built target plumbing_server_client_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=42 "Built target plumbing_server_client_generate_messages_lisp"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2004,7 +2043,7 @@ plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.d
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/all: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/all
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/depend
 	$(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=38,39 "Built target plumbing_server_client_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=40,41 "Built target plumbing_server_client_generate_messages_eus"
 .PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2488,7 +2527,7 @@ plumbing_turtlesim_move_control/CMakeFiles/turtlesim01_pub_twist.dir/all: plumbi
 plumbing_turtlesim_move_control/CMakeFiles/turtlesim01_pub_twist.dir/all: plumbing_turtlesim_move_control/CMakeFiles/std_srvs_generate_messages_py.dir/all
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim01_pub_twist.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim01_pub_twist.dir/depend
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim01_pub_twist.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim01_pub_twist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=44,45 "Built target turtlesim01_pub_twist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=46,47 "Built target turtlesim01_pub_twist"
 .PHONY : plumbing_turtlesim_move_control/CMakeFiles/turtlesim01_pub_twist.dir/all
 
 # Include target in all.
@@ -2554,7 +2593,7 @@ plumbing_turtlesim_move_control/CMakeFiles/turtlesim02_sub_pose.dir/all: plumbin
 plumbing_turtlesim_move_control/CMakeFiles/turtlesim02_sub_pose.dir/all: plumbing_turtlesim_move_control/CMakeFiles/std_srvs_generate_messages_py.dir/all
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim02_sub_pose.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim02_sub_pose.dir/depend
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim02_sub_pose.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim02_sub_pose.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=46,47 "Built target turtlesim02_sub_pose"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=48,49 "Built target turtlesim02_sub_pose"
 .PHONY : plumbing_turtlesim_move_control/CMakeFiles/turtlesim02_sub_pose.dir/all
 
 # Include target in all.
@@ -2812,7 +2851,7 @@ plumbing_turtlesim_move_control/CMakeFiles/turtlesim03_client_spawn.dir/all: plu
 plumbing_turtlesim_move_control/CMakeFiles/turtlesim03_client_spawn.dir/all: plumbing_turtlesim_move_control/CMakeFiles/std_srvs_generate_messages_py.dir/all
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim03_client_spawn.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim03_client_spawn.dir/depend
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim03_client_spawn.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim03_client_spawn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=48,49 "Built target turtlesim03_client_spawn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=50,51 "Built target turtlesim03_client_spawn"
 .PHONY : plumbing_turtlesim_move_control/CMakeFiles/turtlesim03_client_spawn.dir/all
 
 # Include target in all.
@@ -2878,7 +2917,7 @@ plumbing_turtlesim_move_control/CMakeFiles/turtlesim04_param_bg_color_change.dir
 plumbing_turtlesim_move_control/CMakeFiles/turtlesim04_param_bg_color_change.dir/all: plumbing_turtlesim_move_control/CMakeFiles/std_srvs_generate_messages_py.dir/all
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim04_param_bg_color_change.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim04_param_bg_color_change.dir/depend
 	$(MAKE) -f plumbing_turtlesim_move_control/CMakeFiles/turtlesim04_param_bg_color_change.dir/build.make plumbing_turtlesim_move_control/CMakeFiles/turtlesim04_param_bg_color_change.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=50,51 "Built target turtlesim04_param_bg_color_change"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stoner/vscode_workplace/Object_Tracking_Algorithms/ROS_Tutorial/demo3_connection/build/CMakeFiles --progress-num=52,53 "Built target turtlesim04_param_bg_color_change"
 .PHONY : plumbing_turtlesim_move_control/CMakeFiles/turtlesim04_param_bg_color_change.dir/all
 
 # Include target in all.
