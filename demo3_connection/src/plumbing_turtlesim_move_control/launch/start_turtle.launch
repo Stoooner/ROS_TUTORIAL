@@ -1,4 +1,5 @@
 <!-- 启动乌龟GUI与键盘控制节点 -->
+<!-- roslaunch plumbing_turtlesim_move_control start_turtle.launch -->
 <launch>
     <!-- 乌龟GUI -->
     <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI" output="screen"/>

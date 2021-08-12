@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  turtlesim
 )
 
 ## System dependencies are found with CMake's conventions
@@ -136,6 +137,9 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/plumbing_turtlesim_move_control_node.cpp)
 add_executable(turtlesim01_pub_twist src/turtlesim01_pub_twist.cpp)
+add_executable(turtlesim02_sub_pose src/turtlesim02_sub_pose.cpp)
+add_executable(turtlesim03_client_spawn src/turtlesim03_client_spawn.cpp)
+add_executable(turtlesim04_param_bg_color_change src/turtlesim04_param_bg_color_change.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -146,12 +150,24 @@ add_executable(turtlesim01_pub_twist src/turtlesim01_pub_twist.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(turtlesim01_pub_twist ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(turtlesim02_sub_pose ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(turtlesim03_client_spawn ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(turtlesim04_param_bg_color_change ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(turtlesim01_pub_twist
   ${catkin_LIBRARIES}
 )
-
+target_link_libraries(turtlesim02_sub_pose
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(turtlesim03_client_spawn
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(turtlesim04_param_bg_color_change
+  ${catkin_LIBRARIES}
+)
 #############
 ## Install ##
 #############
@@ -161,10 +177,13 @@ target_link_libraries(turtlesim01_pub_twist
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# catkin_install_python(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+catkin_install_python(PROGRAMS
+  scripts/turtlesim01_pub_twist_p.py
+  scripts/turtlesim02_sub_pose_p.py
+  scripts/turtlesim03_client_spawn_p.py
+  scripts/turtlesim04_param_bg_color_change_p.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
